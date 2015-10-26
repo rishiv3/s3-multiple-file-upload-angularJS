@@ -51,7 +51,8 @@
                 if (err) {
                     results.innerHTML = 'ERROR: ' + err;
                 } else {
-                    listObjs();
+                    listObjs(); // this function will list all the files which has been uploaded
+                    //here you can also add your code to update your database(MySQL, firebase whatever you are using)
                 }
             });
         } else {
