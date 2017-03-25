@@ -92,4 +92,4 @@ Just change Region, IdentityPoolId and Your bucket name
     </body>
 
     </html>
-````HTML
+````
