@@ -1,4 +1,4 @@
-# s3-multiple-file-upload-angularJS
+# AWS S3 Multiple File Upload with AngularJS
 Upload multiple files on AWS S3 and storing the url to Firebase using Angular
 
 
