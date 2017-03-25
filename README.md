@@ -11,10 +11,7 @@ http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/browser-examples.html#Amazon_S
 
 Just change Region, IdentityPoolId and Your bucket name 
 
-<!-- begin snippet: js hide: false -->
-
-<!-- language: lang-html -->
-
+````HTML
     <!DOCTYPE html>
     <html>
 
@@ -95,6 +92,4 @@ Just change Region, IdentityPoolId and Your bucket name
     </body>
 
     </html>
-
-
-<!-- end snippet -->
+````HTML
