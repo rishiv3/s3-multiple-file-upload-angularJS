@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>AWS S3 File Upload</title>
-    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
-</head>
+    <head>
+        <title>AWS S3 File Upload</title>
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+    </head>
 
 <body>
     <input type="file" id="file-chooser" />
@@ -23,59 +23,59 @@
     });
 
     var bucketName = 'your-bucket'; // Enter your bucket name
-    var bucket = new AWS.S3({
-        params: {
-            Bucket: bucketName
-        }
-    });
+        var bucket = new AWS.S3({
+            params: {
+                Bucket: bucketName
+            }
+        });
 
-    var fileChooser = document.getElementById('file-chooser');
-    var button = document.getElementById('upload-button');
-    var results = document.getElementById('results');
-    button.addEventListener('click', function() {
+        var fileChooser = document.getElementById('file-chooser');
+        var button = document.getElementById('upload-button');
+        var results = document.getElementById('results');
+        button.addEventListener('click', function() {
 
-        var file = fileChooser.files[0];
+            var file = fileChooser.files[0];
 
-        if (file) {
+            if (file) {
 
-            results.innerHTML = '';
-            var objKey = 'testing/' + file.name;
-            var params = {
-                Key: objKey,
-                ContentType: file.type,
-                Body: file,
-                ACL: 'public-read'
-            };
+                results.innerHTML = '';
+                var objKey = 'testing/' + file.name;
+                var params = {
+                    Key: objKey,
+                    ContentType: file.type,
+                    Body: file,
+                    ACL: 'public-read'
+                };
 
-            bucket.putObject(params, function(err, data) {
+                bucket.putObject(params, function(err, data) {
+                    if (err) {
+                        results.innerHTML = 'ERROR: ' + err;
+                    } else {
+                        listObjs(); // this function will list all the files which has been uploaded
+                        //here you can also add your code to update your database(MySQL, firebase whatever you are using)
+                    }
+                });
+            } else {
+                results.innerHTML = 'Nothing to upload.';
+            }
+        }, false);
+        function listObjs() {
+            var prefix = 'testing';
+            bucket.listObjects({
+                Prefix: prefix
+            }, function(err, data) {
                 if (err) {
                     results.innerHTML = 'ERROR: ' + err;
                 } else {
-                    listObjs(); // this function will list all the files which has been uploaded
-                    //here you can also add your code to update your database(MySQL, firebase whatever you are using)
+                    var objKeys = "";
+                    data.Contents.forEach(function(obj) {
+                        objKeys += obj.Key + "<br>";
+                    });
+                    results.innerHTML = objKeys;
                 }
             });
-        } else {
-            results.innerHTML = 'Nothing to upload.';
         }
-    }, false);
-    function listObjs() {
-        var prefix = 'testing';
-        bucket.listObjects({
-            Prefix: prefix
-        }, function(err, data) {
-            if (err) {
-                results.innerHTML = 'ERROR: ' + err;
-            } else {
-                var objKeys = "";
-                data.Contents.forEach(function(obj) {
-                    objKeys += obj.Key + "<br>";
-                });
-                results.innerHTML = objKeys;
-            }
-        });
-    }
-    </script>
-</body>
+        </script>
+    </body>
 
 </html>
