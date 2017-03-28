@@ -93,3 +93,8 @@ Just change Region, IdentityPoolId and Your bucket name
 
 </html>
 ````
+
+
+# Firebase Docs 
+
+for more information - https://firebase.google.com/docs/
