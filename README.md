@@ -98,3 +98,6 @@ Just change Region, IdentityPoolId and Your bucket name
 # Firebase Docs 
 
 for more information - https://firebase.google.com/docs/
+
+## Setup firebsae
+https://firebase.google.com/docs/web/setup
