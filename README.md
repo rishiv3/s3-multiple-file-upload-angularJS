@@ -101,3 +101,5 @@ for more information - https://firebase.google.com/docs/
 
 ## Setup firebsae
 https://firebase.google.com/docs/web/setup
+
+TODO - Add Firebase to Your app
