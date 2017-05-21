@@ -118,6 +118,4 @@ https://firebase.google.com/docs/web/setup
 </script>
 ````
 
-TODO - Add Firebase to Your app
-
 
