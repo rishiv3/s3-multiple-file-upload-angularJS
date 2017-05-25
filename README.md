@@ -118,4 +118,17 @@ https://firebase.google.com/docs/web/setup
 </script>
 ````
 
+## CORS Config
+
+````XML
+<CORSConfiguration>
+	<CORSRule>
+		<AllowedOrigin>http://www.example.com</AllowedOrigin>
+		<AllowedMethod>GET</AllowedMethod>
+		<MaxAgeSeconds>3000</MaxAgeSeconds>
+		<AllowedHeader>Authorization</AllowedHeader>
+	</CORSRule>
+</CORSConfiguration>
+````
+
 
