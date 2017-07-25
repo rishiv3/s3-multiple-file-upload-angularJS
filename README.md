@@ -93,7 +93,7 @@ Just change Region, IdentityPoolId and Your bucket name
 
 </html>
 ````
-
+#### For generating IdentityPoolId - http://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html
 
 # Firebase Docs 
 
