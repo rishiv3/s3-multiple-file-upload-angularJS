@@ -135,9 +135,8 @@ The official AWS SDK for JavaScript, available for browsers and mobile devices, 
 
 For release notes, see the CHANGELOG. Prior to v2.4.8, release notes can be found at 
 
-https://aws.amazon.com/releasenotes/SDK/JavaScript
-
-http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/index.html
+  - https://aws.amazon.com/releasenotes/SDK/JavaScript
+  - http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/index.html
 
 
 
