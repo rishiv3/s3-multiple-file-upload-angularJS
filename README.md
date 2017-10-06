@@ -11,7 +11,8 @@ http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/browser-examples.html#Amazon_S
 
 Just change Region, IdentityPoolId and Your bucket name 
 
-````HTML<!DOCTYPE html>
+````HTML
+<!DOCTYPE html>
 <html>
     <head>
         <title>AWS S3 File Upload</title>
