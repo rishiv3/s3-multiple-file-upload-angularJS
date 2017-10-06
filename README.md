@@ -134,6 +134,10 @@ https://firebase.google.com/docs/web/setup
 The official AWS SDK for JavaScript, available for browsers and mobile devices, or Node.js backends
 
 For release notes, see the CHANGELOG. Prior to v2.4.8, release notes can be found at 
-http://aws.amazon.com/releasenotes/SDK/JavaScript
+
+https://aws.amazon.com/releasenotes/SDK/JavaScript
+
 http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/index.html
+
+
 
