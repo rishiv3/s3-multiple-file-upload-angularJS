@@ -11,15 +11,12 @@ http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/browser-examples.html#Amazon_S
 
 Just change Region, IdentityPoolId and Your bucket name 
 
-````HTML
-<!DOCTYPE html>
+````HTML<!DOCTYPE html>
 <html>
-
     <head>
         <title>AWS S3 File Upload</title>
         <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
     </head>
-
     <body>
         <input type="file" id="file-chooser" />
         <button id="upload-button">Upload to S3</button>
@@ -51,7 +48,6 @@ Just change Region, IdentityPoolId and Your bucket name
             var file = fileChooser.files[0];
 
             if (file) {
-
                 results.innerHTML = '';
                 var objKey = 'testing/' + file.name;
                 var params = {
@@ -90,7 +86,6 @@ Just change Region, IdentityPoolId and Your bucket name
         }
         </script>
     </body>
-
 </html>
 ````
 #### For generating IdentityPoolId - http://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html
