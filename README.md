@@ -135,6 +135,4 @@ For release notes, see the CHANGELOG. Prior to v2.4.8, release notes can be foun
   
   - http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/index.html
 
-TOTO : updated 11th Oct 2017
-
 
